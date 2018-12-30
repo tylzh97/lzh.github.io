@@ -18,7 +18,7 @@ body {
   font-size: 100%;
   font-family: "Droid Serif", serif;
   color: #7f8c97;
-  background-color: #00BFA5;
+  background-color: #FFC0CB;
 }
 
 a {
@@ -67,12 +67,12 @@ Main components
 header{
   height: 210px;
   line-height: 70px;
-  background: #00BFA5;
+  background: #FFC0CB;
 }
 footer{
   height: 320px;
   line-height: 40px;
-  background: #00BFA5;
+  background: #FFC0CB;
 }
 header h1{
   text-align: center;
