@@ -43,7 +43,7 @@ Modules - reusable parts of our design
 -------------------------------- */
 .cd-container {
   margin: 0 auto;
-  background-color: #e9f0f5;
+  background-color: #ffffff;
   width: 90%;
   margin: 0 auto;
   max-width: 1170px;
@@ -56,7 +56,7 @@ Modules - reusable parts of our design
 }
 .out-container {
   margin: 0 auto;
-  background-color: #e9f0f5;
+  background-color: #ffffff;
 }
 
 /* -------------------------------- 
@@ -87,22 +87,22 @@ footer h1{
 header h2{
   text-align: right;
   margin-right: 20px;
-  color: #CFD8DC;
+  color: rgb(255, 255, 255);
 }
 footer h2{
   text-align: center;
-  color: #CFD8DC;
+  color: rgb(255, 255, 255);
 }
 footer h3{
   text-align: center;
   font-family: "Sans-serif";
   margin-right: 15px;
-  color: #CFD8DC;
+  color: rgb(0, 174, 255);
 }
 footer a{
   font-family: "Sans-serif";
   margin-right: 15px;
-  color: #CFD8DC;
+  color: rgb(255, 255, 255);
 }
 @media only screen and (max-width: 650px) {
   header h2 {
