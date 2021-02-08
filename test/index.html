@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Github CodeSpace Test Page</title>
+</head>
+
+<body>
+    <div id="app">
+        <h1>Hello World!</h1>
+        <hr>
+        <div>
+            <span style="color: red;">span</span>
+        </div>
+        <div id="time"></div>
+    </div>
+    <script>
+        Date.prototype.Format = function (fmt) { //author: meizz   
+            var o = {
+                "M+": this.getMonth() + 1,                 //月份   
+                "d+": this.getDate(),                    //日   
+                "H+": this.getHours(),                   //小时   
+                "m+": this.getMinutes(),                 //分   
+                "s+": this.getSeconds(),                 //秒   
+                "q+": Math.floor((this.getMonth() + 3) / 3), //季度   
+                "S": this.getMilliseconds()             //毫秒   
+            };
+            if (/(y+)/.test(fmt))
+                fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+            for (var k in o)
+                if (new RegExp("(" + k + ")").test(fmt))
+                    fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+            return fmt;
+        }
+
+        window.onload = () => {
+            const time = document.getElementById('time');
+            const clockTimer = setInterval(() => {
+                console.log('Hello World!');
+                const currDate = new Date().Format("yyyy-MM-dd HH:mm:ss");
+                time.innerText = currDate;
+            }, 1000);
+        };
+    </script>
+</body>
+
+</html>
